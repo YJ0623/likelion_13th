@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 헤더부분과 carousel(회전하지는 않지만요...)을 구현하였습니다. 
+     사이트랑 비슷하게 보이도록 노력했습니다만, 화면 크기 조정에 따른 구현은 너무 어려워서 못했습니다 ㅜㅜ -->
+    <div data-lang="ko" class="main">
+        <div class="content_wrapper">
+            <div class="header">
+                <h2 class="title">서울의 인기 급상승 숙소</h2>
+                <div class="subtitle">에어비앤비에서 많은 관심을 받고 있으며 평점이 높은 숙소입니다.</div>
+            </div>
+            <div class="carousel_wrapper">
+                <div class="carousel">
+                    <div class="carousel_item">
+                        <img src="./image1.png" alt="숙소 이미지 1">
+                        <div class="carousel_item_title">종로구의 휴가용 주택 ★ 4.97 (235)</div>
+                        <div class="carousel_item_subtitle">몸과 마음을 편안하게 해주는 치유재</div>
+                        <div class="carousel_item_subtitle">지난주 464회 조회됨</div>
+                        <div class="carousel_item_subtitle">5월 4일~9일</div>
+                        <div class="display_price">
+                            <span class="daily_price" id="price1">₩471,534 /박</span>
+                            <span class="total_price"> ∙ 총액 ₩2,357,672</span>
+                        </div>
+                    </div>
+                    <div class="guest_favorite">게스트 선호</div>
+
+                    <div class="carousel_item">
+                        <img src="./image2.png" alt="숙소 이미지 2">
+                        <div class="carousel_item_title">서울의 집 ★ 5.0 (46)</div>
+                        <div class="carousel_item_subtitle">Stay Cocooner / 서촌</div>
+                        <div class="carousel_item_subtitle">지난주 309회 조회됨</div>
+                        <div class="carousel_item_subtitle">5월 6일~11일</div>
+                        <div class="display_price">
+                            <span class="daily_price">₩147,668 /박</span>
+                            <span class="total_price"> ∙ 총액 ₩738,342</span>
+                        </div>
+                        <div class="guest_favorite">게스트 선호</div>
+                    </div>
+
+                    <div class="carousel_item">
+                        <img src="./image3.png" alt="숙소 이미지 3">
+                        <div class="carousel_item_title">서울의 집 ★ 4.9 (41)</div>
+                        <div class="carousel_item_subtitle">종로독채한옥 ‘스테이희와’ Premium Hanok Stay#야외자쿠지#무료주차#사계절온수</div>
+                        <div class="carousel_item_subtitle">지난주 605회 조회됨</div>
+                        <div class="carousel_item_subtitle">7월 3일~8일</div>
+                        <div class="display_price">
+                            <span class="daily_price">₩410,595 /박</span>
+                            <span class="total_price"> ∙ 총액 ₩2,052,977</span>
+                        </div>
+                        <div class="guest_favorite">게스트 선호</div>
+                    </div>
+                    <div class="carousel_item">
+                        <img src="./image4.png" alt="숙소 이미지 4">
+                        <div class="carousel_item_title">서울의 아파트 ★ 4.97 (235)</div>
+                        <div class="carousel_item_subtitle">몸과 마음을 편안하게 해주는 치유재</div>
+                        <div class="carousel_item_subtitle">지난주 464회 조회됨</div>
+                        <div class="carousel_item_subtitle">5월 4일~9일</div>
+                        <div class="display_price">
+                            <span class="daily_price">₩138,082 /박</span>
+                            <span class="total_price"> ∙ 총액 ₩690,412</span>
+                        </div>
+                        <div class="guest_favorite">게스트 선호</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 더 찾아보기 버튼이 아래쪽에 위치해 있길래 따로 빼서 구현했고, 겸사겸사 - / + 버튼도 구현했습니다. -->
+            <div class="search_wrapper">
+                <span class="more_view">더 찾아보기</span>
+                    <button id="decrease">-</button>
+                    <button id="increase">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

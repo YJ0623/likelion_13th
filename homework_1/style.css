@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+사이트랑 비슷하게 만들어보려고 시간 많이 들였습니다.
+특이 사항이 있는 부분을 주석으로 달아놓았습니다.
+*/
+h2 {
+    font-size: 32px;
+    font-weight: 350;
+    padding-bottom: 8px;
+    margin: 0;
+    text-align: start;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.content_wrapper {
+    padding: 48px 40px 96px 72px;
+    background-color: #ffffff;
+    width: 1440px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/* 세션때 배웠던 justify-content, align-items를 잘 활용했고, 
+flex-wrap에 대한 추가적인 학습도 있었습니다.
+자식 요소가 모두 한 줄로 배치되고, 부모 요소의 크기를 초과하면 자식 요소가 다음 줄로 넘어가는 wrap 옵션을 사용했습니다. */
+.carousel {
+    margin: -4px -12px -4px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    align-items: center;
+    line-height: 19px;
+    column-gap: 24px;
+    position: relative;
+}
+/* flow-root가 뭔지는 잘 모르겠는데, 에어비앤비 사이트에서 했길래 일단 해봤습니다. 추가적으로 학습하도록 하겠습니다. */
+.carousel_item{
+    display: flow-root;
+    flex-direction: row;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.carousel_item_title {
+    width: 230px;
+    column-gap: 8px;
+    word-break: break-all;
+    text-size-adjust: 100%;
+    font-weight: 400;
+    white-space: pre;
+}
+
+/* 텍스트가 넘칠 때 ...로 변하게끔 처리하였습니다. */
+.carousel_item_subtitle {
+    color: rgb(106,106,106);
+    display: flow-root;
+    width: 230px;
+    grid-column-end: -1;
+    grid-column-start: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+}
+
+img {
+    width: 300px;
+    height: 290px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+/* 
+게스트 추천 항목이 div요소 위에 배치될 수 있게끔, 부모 요소를 relative / 자식 요소를 absolute로 설정했습니다.
+그리고 적절한 위치 조정을 통해 깔끔하게 보이도록 했습니다.
+ */
+.guest_favorite {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    top: 10px;
+    left: 10px;
+}
+
+.daily_price {
+    color: rgb(34,34,34);
+}
+
+.total_price {
+    color: rgb(106,106,106);
+}
+
+.search_wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.more_view {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 48px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+} 
+
+/* 버튼 스타일: 클릭하면 box-shadow 발생 */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1EFEC;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
