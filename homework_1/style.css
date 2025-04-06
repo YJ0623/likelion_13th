@@ -61,7 +61,7 @@ flex-wrap에 대한 추가적인 학습도 있었습니다.
     white-space: pre;
 }
 
-/* 텍스트가 넘칠 때 ...로 변하게끔 처리하였습니다. */
+/* 텍스트가 넘칠 때 ...로 변하게끔 처리하였습니다. 검토를 하면서 알았는데요, grid옵션을 따로 설정할 필요가 없었던 것 같습니다. 에어비앤비에서는 display: grid로 했었는데 저는 flex로 했어서요...*/
 .carousel_item_subtitle {
     color: rgb(106,106,106);
     display: flow-root;
