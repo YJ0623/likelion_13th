@@ -1,0 +1,34 @@
+[
+  {
+    "albumImage": "/src/assets/rebel-heart.jpeg",
+    "releaseDate": "2025-01-13",
+    "artist": "IVE",
+    "title": "REBEL HEART",
+    "lyricist": "Nietzsche",
+    "composer": "Emily Harbakk"
+  },
+  {
+    "albumImage": "/src/assets/born-pink.jpeg",
+    "releaseDate": "2023-09-15",
+    "artist": "BLACKPINK",
+    "title": "BORN PINK",
+    "lyricist": "Kylie Minogue",
+    "composer": "Teddy Park"
+  },
+  {
+    "albumImage": "/src/assets/evermore.jpeg",
+    "releaseDate": "2020-12-11",
+    "artist": "Taylor Swift",
+    "title": "EVERMORE",
+    "lyricist": "Taylor Swift",
+    "composer": "Aaron Dessner"
+  },
+  {
+    "albumImage": "/src/assets/new-jeans.jpeg",
+    "releaseDate": "2023-10-06",
+    "artist": "New Jeans",
+    "title": "NEW JEANS",
+    "lyricist": "Min Hee Jin",
+    "composer": "Bang Si Hyuk"
+  }
+]
